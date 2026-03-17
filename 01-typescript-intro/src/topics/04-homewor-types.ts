@@ -28,7 +28,7 @@ const superHeroe: SuperHero = {
         city: 'NY'
     },
     showAddress() {
-        return this.name + ', ' + this.address.city + ', ' + this.address.country;
+        return 'nombre : ' + this.name + ', ciudad: ' + this.address.city + ', país:  ' + this.address.country;
     }
 }
 
