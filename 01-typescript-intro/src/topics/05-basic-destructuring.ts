@@ -27,18 +27,37 @@ const audioPlayer: AudioPlayer = {
 
 }
 
+const song = 'New Song';
 
 //De esta forma realizamos una destructuracion del objeto:
-const song = 'New Song';
 const { song: anotherSong , songDuration: duration } = audioPlayer;
 
+//forma mas repetitiva :
+console.log('Author: ' , audioPlayer.details.author );
 
-//Imprimir por pantalla:
+//Imprimir por pantalla forma util:
 
 console.log('Song:' , anotherSong);
 console.log('Duration: ', duration);
 
-//Otra forma :
-console.log('Author: ' , audioPlayer.details.author );
+//Primero desestructuramos lo details y despues el author
+const { author: autor, year: yearSong } = audioPlayer.details;
+
+//Imprimir por pantalla los elementos del details:
+
+console.log('Author:' , autor);
+console.log('Year: ', yearSong);
+
+
+//Explicacion de Desestructuracion de arreglos:
+
+const [ , , trunks]: string[] = ['Goku' , 'Vegete' , 'Trunk'];
+
+
+console.error('Personaje 3:' , trunks);
+
+
+
+
 
 export{};
