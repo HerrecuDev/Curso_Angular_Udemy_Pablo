@@ -49,12 +49,12 @@ console.log('Author:' , autor);
 console.log('Year: ', yearSong);
 
 
-//Explicacion de Desestructuracion de arreglos:
+//Explicacion de Desestructuracion de arreglos(Arrays):
 
-const [ , , trunks]: string[] = ['Goku' , 'Vegete' , 'Trunk'];
+const [ p1, , trunks]: string[] = ['Goku' , 'Vegeta' , 'Trunks'];
 
 
-console.error('Personaje 3:' , trunks);
+console.error('Personaje 3:' , trunks );
 
 
 
